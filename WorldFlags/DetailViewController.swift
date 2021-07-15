@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         title = countryName
+        navigationItem.largeTitleDisplayMode = .never
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(buttonTapped))
         
         if let imageToLoad = selectedImage {
